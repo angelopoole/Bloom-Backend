@@ -3,13 +3,25 @@
 one:
   name: MyString
   meaning: MyString
+<<<<<<< HEAD
+  image_url: MyString
+  sound: MyString
+  integer: 
+=======
   img_url: MyString
   sound: MyString
   belongs_to: 
+>>>>>>> f927df4113b0066c4570d72bd16b4773cb4a2ce8
 
 two:
   name: MyString
   meaning: MyString
+<<<<<<< HEAD
+  image_url: MyString
+  sound: MyString
+  integer: 
+=======
   img_url: MyString
   sound: MyString
   belongs_to: 
+>>>>>>> f927df4113b0066c4570d72bd16b4773cb4a2ce8
