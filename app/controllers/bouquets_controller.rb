@@ -1,0 +1,2 @@
+class BouquetsController < ApplicationController
+end
