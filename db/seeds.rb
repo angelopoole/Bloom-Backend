@@ -25,7 +25,7 @@ Bouquet.create(name: "test", description:"this is nothin' but a lil' test!")
 
 # ******************** FlowerBoutets ************************
 # <FlowerBouquet id: nil, flowers_id: nil, bouquets_id: nil, created_at: nil, updated_at: nil> 
-FlowerBouquet.create(flowers_id: Flower.first.id, bouquets_id: Bouquet.first.id)
+FlowerBouquet.create(flower_id: Flower.first.id, bouquet_id: Bouquet.first.id)
 
 
 puts "Seeding complete!"
