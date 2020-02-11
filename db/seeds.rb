@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Flower.create(name: "Tulip", meaning: "forgiveness for the tired soul", img_url: "https://s3.amazonaws.com/cdn.tulips.com/images/large/Washington-2017.jpg")
