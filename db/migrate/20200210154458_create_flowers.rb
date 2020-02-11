@@ -5,7 +5,6 @@ class CreateFlowers < ActiveRecord::Migration[6.0]
       t.string :meaning
       t.string :img_url
       t.string :sound
-      t.integer :bouquet_id
 
       t.timestamps
     end

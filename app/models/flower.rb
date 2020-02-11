@@ -1,3 +1,4 @@
 class Flower < ApplicationRecord
-    belongs_to :bouquet
+    has_many :flower_bouquets
+    has_many :bouquets, through: :flower_bouquets
 end

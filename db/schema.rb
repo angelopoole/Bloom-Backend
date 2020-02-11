@@ -10,44 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 2020_02_07_230708) do
-=======
-ActiveRecord::Schema.define(version: 2020_02_10_154721) do
->>>>>>> 722985867f88b616c8c6fc52bc1ca62fce578c32
+ActiveRecord::Schema.define(version: 2020_02_11_154902) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "bouquets", force: :cascade do |t|
-<<<<<<< HEAD
-=======
     t.string "name"
     t.string "description"
->>>>>>> 722985867f88b616c8c6fc52bc1ca62fce578c32
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "flower_bouquets", force: :cascade do |t|
+    t.bigint "flower_id"
+    t.bigint "bouquet_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["bouquet_id"], name: "index_flower_bouquets_on_bouquet_id"
+    t.index ["flower_id"], name: "index_flower_bouquets_on_flower_id"
   end
 
   create_table "flowers", force: :cascade do |t|
     t.string "name"
     t.string "meaning"
     t.string "img_url"
-<<<<<<< HEAD
-    t.string "sound_file"
-    t.bigint "bouquet_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["bouquet_id"], name: "index_flowers_on_bouquet_id"
-  end
-
-  add_foreign_key "flowers", "bouquets"
-=======
     t.string "sound"
-    t.integer "bouquet_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
->>>>>>> 722985867f88b616c8c6fc52bc1ca62fce578c32
 end
