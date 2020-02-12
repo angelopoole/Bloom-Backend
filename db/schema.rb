@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 2020_02_11_154902) do
     t.string "meaning"
     t.string "img_url"
     t.string "sound"
+    t.integer "bouquet_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
