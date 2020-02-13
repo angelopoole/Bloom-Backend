@@ -19,15 +19,15 @@ class BouquetsController < ApplicationController
         flowersArr = params[:flowers].split(',')
         bouquet = Bouquet.create(
             name: params[:name], 
-            description: params[:description], 
+            description: params[:description],
         )
 
         flowersArr.each do |flower_id| 
             flower = Flower.find(flower_id)
             FlowerBouquet.create(flower_id: flower.id, bouquet_id: bouquet.id)
         end
-
-        render json: bouquet
+    
+        render json: bouquet.to_json( :include => [:flowers] )
     end
 
 
