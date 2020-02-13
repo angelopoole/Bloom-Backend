@@ -1,3 +1,3 @@
 class FlowerBouquetSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :flower_id, :bouquet_id
 end

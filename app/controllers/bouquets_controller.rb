@@ -8,8 +8,11 @@ class BouquetsController < ApplicationController
 
     def show
         bouquet = Bouquet.find(params[:id])
-
-        render json: bouquet
+        bouquetFlowers = bouquet.flowers
+        
+        render json: [bouquet, bouquetFlowers]
+        # render json: bouquet
+        
     end
 
     def create
